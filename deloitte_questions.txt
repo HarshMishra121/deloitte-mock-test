@@ -1,0 +1,2591 @@
+================================================================
+DELOITTE TECHNICAL ASSESSMENT - CORE CS SUBJECTS (PART 1/3)
+Subjects: OS, DBMS, CN, OOPS, Data Structures
+Total Questions in this file: 75
+================================================================
+
+---------------------------
+SECTION: OPERATING SYSTEMS
+---------------------------
+Q1. Which of the following is NOT a condition necessary for a deadlock to occur?
+A) Mutual Exclusion
+B) Hold and Wait
+C) No Preemption
+D) Starvation
+[ANS]: D (Starvation is an effect, not a condition. Circular Wait is the 4th condition.)
+
+Q2. What is the main function of the command interpreter in an OS?
+A) To provide the interface between the user and the computer
+B) To handle the files in the operating system
+C) To get and execute the next user-specified command
+D) None of the above
+[ANS]: C
+
+Q3. Which scheduling algorithm yields the minimum average waiting time?
+A) FCFS
+B) SJF (Shortest Job First)
+C) Round Robin
+D) Priority
+[ANS]: B (SJF is optimal for minimizing average waiting time)
+
+Q4. The time required to move the disk arm to the required track is known as:
+A) Seek Time
+B) Rotational Delay
+C) Latency
+D) Access Time
+[ANS]: A
+
+Q5. Virtual memory allows:
+A) Execution of a process that is not completely in memory
+B) Execution of a process that is larger than physical memory
+C) Both A and B
+D) None of the above
+[ANS]: C
+
+Q6. A semaphore is a shared integer variable that can be accessed only through:
+A) Standard file operations
+B) Two standard atomic operations: Wait and Signal
+C) The compiler
+D) The user
+[ANS]: B
+
+Q7. In Unix, which system call creates the new process?
+A) create
+B) fork
+C) new
+D) exec
+[ANS]: B
+
+Q8. Which page replacement algorithm suffers from Belady's Anomaly?
+A) LRU
+B) FIFO
+C) Optimal
+D) LFU
+[ANS]: B (In FIFO, increasing page frames can sometimes increase page faults)
+
+Q9. Context switching involves:
+A) Saving the state of the old process
+B) Loading the state of the new process
+C) Both A and B
+D) None of the above
+[ANS]: C
+
+Q10. Inter-process communication can be done through:
+A) Mails
+B) Messages
+C) Pipes
+D) All of the above
+[ANS]: D
+
+---------------------------
+SECTION: DBMS (DATABASE)
+---------------------------
+Q11. The ability to query data, as well as insert, delete, and update tuples, is offered by:
+A) DDL (Data Definition Language)
+B) DML (Data Manipulation Language)
+C) DCL (Data Control Language)
+D) TCL (Transaction Control Language)
+[ANS]: B
+
+Q12. In the relational model, cardinality is termed as:
+A) Number of tuples
+B) Number of attributes
+C) Number of tables
+D) Number of constraints
+[ANS]: A (Rows/Tuples = Cardinality; Columns/Attributes = Degree)
+
+Q13. Which normal form is considered adequate for normal relational database design?
+A) 2NF
+B) 3NF
+C) 4NF
+D) 5NF
+[ANS]: B (3NF is usually sufficient for most business applications)
+
+Q14. An attribute that uniquely identifies each row in a table is known as:
+A) Foreign Key
+B) Primary Key
+C) Candidate Key
+D) Alternate Key
+[ANS]: B
+
+Q15. The 'HAVING' clause is used in combination with:
+A) SELECT
+B) WHERE
+C) GROUP BY
+D) ORDER BY
+[ANS]: C
+
+Q16. Which of the following is NOT a type of Database Management System?
+A) Hierarchical
+B) Network
+C) Relational
+D) Sequential
+[ANS]: D
+
+Q17. What is the full form of ACID properties?
+A) Atomicity, Consistency, Isolation, Database
+B) Atomicity, Consistency, Isolation, Durability
+C) Atomicity, Concurrency, Isolation, Durability
+D) Accuracy, Consistency, Isolation, Durability
+[ANS]: B
+
+Q18. A transaction completes its execution is said to be:
+A) Committed
+B) Aborted
+C) Rolled back
+D) Failed
+[ANS]: A
+
+Q19. Which operator is used to compare a value to a list of literal values that have been specified?
+A) LIKE
+B) IN
+C) BETWEEN
+D) ANY
+[ANS]: B
+
+Q20. SQL Views are also known as:
+A) Complex tables
+B) Simple tables
+C) Virtual tables
+D) Actual tables
+[ANS]: C
+
+---------------------------
+SECTION: COMPUTER NETWORKS
+---------------------------
+Q21. Which layer is responsible for process-to-process delivery?
+A) Network Layer
+B) Transport Layer
+C) Session Layer
+D) Data Link Layer
+[ANS]: B (Network layer is Host-to-Host)
+
+Q22. What is the size of a MAC address?
+A) 32 bits
+B) 48 bits
+C) 64 bits
+D) 128 bits
+[ANS]: B
+
+Q23. Which protocol is used to find the MAC address from an IP address?
+A) RARP
+B) ARP
+C) DHCP
+D) DNS
+[ANS]: B (Address Resolution Protocol)
+
+Q24. Which topology requires the most amount of cabling?
+A) Ring
+B) Bus
+C) Star
+D) Mesh
+[ANS]: D (Because every node is connected to every other node)
+
+Q25. Which of the following is a connection-oriented protocol?
+A) UDP
+B) IP
+C) TCP
+D) ICMP
+[ANS]: C
+
+Q26. Port number 25 is reserved for:
+A) HTTP
+B) FTP
+C) SMTP
+D) Telnet
+[ANS]: C (Simple Mail Transfer Protocol)
+
+Q27. The layout of a network is known as:
+A) Protocol
+B) Topology
+C) Architecture
+D) Transmission
+[ANS]: B
+
+Q28. Which device connects networks with different protocols?
+A) Switch
+B) Hub
+C) Gateway
+D) Router
+[ANS]: C
+
+Q29. IPv4 addresses are Class A, B, C, D, and E. Which class is reserved for future use?
+A) Class C
+B) Class D
+C) Class E
+D) Class B
+[ANS]: C
+
+Q30. In OSI model, data compression is the responsibility of:
+A) Application Layer
+B) Presentation Layer
+C) Session Layer
+D) Transport Layer
+[ANS]: B
+
+---------------------------
+SECTION: OOPS & C++ CONCEPTS
+---------------------------
+Q31. Which of the following is not a feature of OOP?
+A) Encapsulation
+B) Polymorphism
+C) Inheritance
+D) Compilation
+[ANS]: D
+
+Q32. When a class is defined inside another class, it is called:
+A) Inner Class
+B) Nested Class
+C) Container Class
+D) Embedded Class
+[ANS]: B
+
+Q33. Which symbol is used for the destructor?
+A) @
+B) #
+C) ~
+D) $
+[ANS]: C (Tilde)
+
+Q34. Pure virtual functions are used in:
+A) Abstract Classes
+B) Static Classes
+C) Global Classes
+D) Friend Classes
+[ANS]: A
+
+Q35. Friend function can access:
+A) Only Public members
+B) Only Protected members
+C) Only Private members
+D) All members (Public, Private, Protected)
+[ANS]: D
+
+Q36. Which feature allows a child class to have more than one parent class?
+A) Multilevel Inheritance
+B) Multiple Inheritance
+C) Hierarchical Inheritance
+D) Hybrid Inheritance
+[ANS]: B (Supported in C++, but not in Java)
+
+Q37. 'cin' and 'cout' in C++ are:
+A) Functions
+B) Classes
+C) Objects
+D) Operators
+[ANS]: C (Objects of istream and ostream classes)
+
+Q38. What is the return type of a Constructor?
+A) int
+B) void
+C) float
+D) None
+[ANS]: D (Constructors do not have a return type)
+
+Q39. Polymorphism can be achieved by:
+A) Function Overloading
+B) Operator Overloading
+C) Virtual Functions
+D) All of the above
+[ANS]: D
+
+Q40. The 'this' pointer is:
+A) A pointer to the class
+B) A pointer to the object itself
+C) A pointer to the parent class
+D) A global pointer
+[ANS]: B
+
+---------------------------
+SECTION: DATA STRUCTURES
+---------------------------
+Q41. Which data structure works on LIFO principle?
+A) Queue
+B) Stack
+C) Tree
+D) Graph
+[ANS]: B
+
+Q42. The complexity of Binary Search is:
+A) O(n)
+B) O(n^2)
+C) O(log n)
+D) O(1)
+[ANS]: C
+
+Q43. Which sorting algorithm is the fastest in the average case?
+A) Bubble Sort
+B) Insertion Sort
+C) Quick Sort
+D) Selection Sort
+[ANS]: C (O(n log n))
+
+Q44. A graph with no cycles is called:
+A) Tree
+B) Bipartite Graph
+C) Connected Graph
+D) Complete Graph
+[ANS]: A (Technically a forest if disconnected, but Tree is the common answer for connected acyclic graph)
+
+Q45. Postfix expression of (A+B)*C is:
+A) AB+C*
+B) +AB*C
+C) ABC*+
+D) A+BC*
+[ANS]: A
+
+Q46. In a Linked List, how many pointers are required to find the previous node?
+A) 0
+B) 1 (if Doubly Linked List) or Traversal (if Singly)
+C) 2
+D) 3
+[ANS]: B
+
+Q47. Elements in an array are accessed:
+A) Sequentially
+B) Randomly
+C) Exponentially
+D) Logarithmically
+[ANS]: B
+
+Q48. Which data structure is used in recursion?
+A) Queue
+B) Stack
+C) Array
+D) Tree
+[ANS]: B
+
+Q49. Minimum number of edges in a connected graph with N vertices is:
+A) N
+B) N-1
+C) N+1
+D) N/2
+[ANS]: B
+
+Q50. Hashing is used for:
+A) Sorting
+B) Searching
+C) Indexing
+D) Both B and C
+[ANS]: D
+
+---------------------------
+SECTION: PROGRAMMING LOGIC (C/C++)
+---------------------------
+Q51. What is the size of 'int' in a 32-bit compiler?
+A) 2 bytes
+B) 4 bytes
+C) 8 bytes
+D) Depends on OS
+[ANS]: B
+
+Q52. Output of: printf("%d", 10 ? 0 ? 5 : 1 : 12);
+A) 10
+B) 0
+C) 1
+D) 12
+[ANS]: C (Nested ternary: 10 is true -> checks 0? -> 0 is false -> result is 1)
+
+Q53. Which header file is required for 'malloc()'?
+A) <stdio.h>
+B) <stdlib.h>
+C) <conio.h>
+D) <alloc.h>
+[ANS]: B
+
+Q54. What is a memory leak?
+A) Memory that is lost due to power failure
+B) Memory allocated but not freed
+C) Memory accessed illegally
+D) Memory fragmentation
+[ANS]: B
+
+Q55. 'break' statement is used to exit from:
+A) If statement
+B) For loop
+C) Switch statement
+D) Both B and C
+[ANS]: D
+
+Q56. What is the precedence of operators?
+A) * > + > =
+B) + > * > =
+C) = > * > +
+D) * > = > +
+[ANS]: A
+
+Q57. A variable declared inside a function without storage class has:
+A) Global scope
+B) File scope
+C) Block scope (Auto)
+D) Static scope
+[ANS]: C
+
+Q58. Can we overload the 'sizeof' operator in C++?
+A) Yes
+B) No
+C) Only in classes
+D) Only in structures
+[ANS]: B
+
+Q59. The keyword 'volatile' implies:
+A) Variable value can change unexpectedly (external hardware/thread)
+B) Variable is constant
+C) Variable is optimized
+D) None of the above
+[ANS]: A
+
+Q60. Which loop is guaranteed to execute at least once?
+A) for
+B) while
+C) do-while
+D) None
+[ANS]: C
+
+---------------------------
+SECTION: MISC IMPORTANT
+---------------------------
+Q61. In C++, '<<' is:
+A) Insertion operator
+B) Extraction operator
+C) Left shift operator
+D) Both A and C
+[ANS]: D
+
+Q62. SDLC stands for:
+A) System Development Life Cycle
+B) Software Development Life Cycle
+C) Structure Design Life Cycle
+D) Software Design Logic Cycle
+[ANS]: B
+
+Q63. Which testing is done by developers?
+A) Unit Testing
+B) Beta Testing
+C) Acceptance Testing
+D) System Testing
+[ANS]: A
+
+Q64. In IP addressing, 127.0.0.1 is:
+A) Broadcast address
+B) Loopback address
+C) Network address
+D) Multicast address
+[ANS]: B
+
+Q65. DNS stands for:
+A) Domain Name System
+B) Data Network Service
+C) Digital Network System
+D) Domain Number System
+[ANS]: A
+
+Q66. Which is not a linear data structure?
+A) Array
+B) Linked List
+C) Queue
+D) Tree
+[ANS]: D
+
+Q67. 'static' variables are stored in which part of memory?
+A) Stack
+B) Heap
+C) Data Segment
+D) Code Segment
+[ANS]: C
+
+Q68. Difference between Structure and Union?
+A) Structure uses more memory, Union uses memory of largest member
+B) Union uses more memory
+C) No difference
+D) Union cannot have functions
+[ANS]: A
+
+Q69. Which is faster: ++i or i++?
+A) i++
+B) ++i
+C) Both are same
+D) Compiler dependent
+[ANS]: B (++i is generally faster as it doesn't need to store the old value)
+
+Q70. What is an 'Abstract Class' in Java/C++?
+A) A class with no methods
+B) A class that cannot be instantiated
+C) A class with only static methods
+D) A final class
+[ANS]: B
+
+Q71. HTTP Error 404 means:
+A) Bad Gateway
+B) Internal Server Error
+C) Not Found
+D) Forbidden
+[ANS]: C
+
+Q72. Which command is used to check connectivity between two nodes?
+A) ipconfig
+B) ping
+C) traceroute
+D) netstat
+[ANS]: B
+
+Q73. In a relation, the order of columns is:
+A) Important
+B) Immaterial (Not important)
+C) Significant
+D) None
+[ANS]: B
+
+Q74. Which key is used to speed up data retrieval?
+A) Primary Key
+B) Foreign Key
+C) Index
+D) Candidate Key
+[ANS]: C
+
+Q75. The core of the Linux operating system is:
+A) Shell
+B) Kernel
+C) Terminal
+D) Command Line
+[ANS]: B
+================================================================
+DELOITTE TECHNICAL ASSESSMENT - CORE CS SUBJECTS (PART 2/3)
+Subjects: Advanced C/C++, Python, OS, CN, DBMS
+Total Questions in this file: 75 (Cumulative: 150)
+================================================================
+
+---------------------------
+SECTION: C/C++ & PYTHON OUTPUT (TRICKY)
+---------------------------
+Q76. What will be the output?
+   int main() {
+       int i = 5;
+       printf("%d %d %d", i++, i++, i++);
+       return 0;
+   }
+A) 5 6 7
+B) 7 6 5
+C) 5 5 5
+D) Compiler Dependent
+[ANS]: D (The order of evaluation of function arguments is undefined in C standard, usually Right-to-Left in GCC, giving 7 6 5, but strictly it's dependent).
+
+Q77. #define SQUARE(x) x*x
+   main() { printf("%d", SQUARE(4+1)); }
+A) 25
+B) 16
+C) 9
+D) 41
+[ANS]: C (Macro expansion: 4+1*4+1 => 4+4+1 = 9. Use parenthesis (x)*(x) to fix).
+
+Q78. In Python, what is the output of: print(0.1 + 0.2 == 0.3)
+A) True
+B) False
+C) Error
+D) 0.3
+[ANS]: B (False. Due to floating point precision, 0.1+0.2 is 0.30000000000000004).
+
+Q79. Which of the following is immutable in Python?
+A) List
+B) Dictionary
+C) Set
+D) Tuple
+[ANS]: D
+
+Q80. Output of:
+   char *p = "Hello";
+   printf("%c", *&*p);
+A) H
+B) Hello
+C) Address of H
+D) Error
+[ANS]: A (* and & cancel each other).
+
+Q81. What happens if you call free() on a NULL pointer?
+A) Segmentation fault
+B) Compiler Error
+C) Runtime Error
+D) Nothing happens
+[ANS]: D (Safe to call free on NULL).
+
+Q82. In C++, which operator cannot be overloaded?
+A) +
+B) ==
+C) :: (Scope Resolution)
+D) []
+[ANS]: C
+
+Q83. Python: print("hello" * 3)
+A) hello3
+B) hello hello hello
+C) hellohellohello
+D) Error
+[ANS]: C
+
+Q84. Size of 'void' pointer in C?
+A) 0
+B) 2
+C) 4 (32-bit) / 8 (64-bit)
+D) 1
+[ANS]: C (It stores an address, so size is same as int* or char*).
+
+Q85. Which storage class has default initial value as Garbage?
+A) static
+B) extern
+C) auto
+D) global
+[ANS]: C
+
+---------------------------
+SECTION: OPERATING SYSTEMS (ADVANCED)
+---------------------------
+Q86. Which component triggers the CPU to switch from User Mode to Kernel Mode?
+A) System Call
+B) Process
+C) Thread
+D) Scheduler
+[ANS]: A
+
+Q87. 'Spooling' stands for:
+A) Simultaneous Peripheral Operation On-Line
+B) Serial Peripheral Operation On-Line
+C) Standard Peripheral Operation On-Line
+D) System Protocol On-Line
+[ANS]: A (Used in printers).
+
+Q88. Which kernel architecture puts minimum code in kernel space?
+A) Monolithic Kernel
+B) Micro Kernel
+C) Hybrid Kernel
+D) Nano Kernel
+[ANS]: B
+
+Q89. FCFS scheduling is:
+A) Preemptive
+B) Non-Preemptive
+C) Both
+D) None
+[ANS]: B
+
+Q90. In which state does a process reside if it is ready to execute but waiting for CPU?
+A) Waiting
+B) Blocked
+C) Ready
+D) Running
+[ANS]: C
+
+Q91. What is 'Fragmentation'?
+A) Dividing a process into threads
+B) Wastage of memory space
+C) Dividing disk into tracks
+D) Context switching
+[ANS]: B
+
+Q92. Which command shows current running processes in Linux?
+A) tasklist
+B) ps
+C) show
+D) proc
+[ANS]: B
+
+Q93. A thread is also known as:
+A) Heavyweight Process
+B) Lightweight Process
+C) Scheduler
+D) Child Process
+[ANS]: B
+
+Q94. User-level threads are faster than Kernel-level threads because:
+A) No context switching is required
+B) OS is not involved in synchronization
+C) They use less memory
+D) They are scheduled by user
+[ANS]: B (Context switch doesn't require kernel intervention).
+
+Q95. The problem of 'Indefinite Blockage' of low-priority processes is called:
+A) Deadlock
+B) Starvation
+C) Aging
+D) Paging
+[ANS]: B
+
+---------------------------
+SECTION: DATA STRUCTURES & ALGORITHMS
+---------------------------
+Q96. Which data structure is best for checking balanced parentheses?
+A) Queue
+B) Tree
+C) Stack
+D) Array
+[ANS]: C
+
+Q97. In a Binary Search Tree (BST), which traversal prints elements in sorted order?
+A) Pre-order
+B) Post-order
+C) In-order
+D) Level-order
+[ANS]: C
+
+Q98. Height of a complete binary tree with N nodes is:
+A) N
+B) N/2
+C) log N
+D) N*N
+[ANS]: C
+
+Q99. Which algorithm is used to find the Shortest Path in a graph?
+A) Prim's Algorithm
+B) Kruskal's Algorithm
+C) Dijkstra's Algorithm
+D) DFS
+[ANS]: C
+
+Q100. Time complexity of inserting an element at the beginning of an array?
+A) O(1)
+B) O(log n)
+C) O(n)
+D) O(n^2)
+[ANS]: C (Need to shift all elements).
+
+Q101. A linear list of elements in which deletion can be done from one end and insertion can take place only at the other end:
+A) Stack
+B) Queue
+C) Tree
+D) Linked List
+[ANS]: B
+
+Q102. Which collision resolution technique is used in Hashing?
+A) Chaining
+B) Divide and Conquer
+C) Greedy Method
+D) Dynamic Programming
+[ANS]: A
+
+Q103. Which sort is NOT stable?
+A) Bubble Sort
+B) Insertion Sort
+C) Quick Sort
+D) Merge Sort
+[ANS]: C
+
+Q104. Maximum number of nodes in a binary tree of height 'h':
+A) 2^h
+B) 2^(h+1) - 1
+C) 2^(h-1)
+D) 2*h
+[ANS]: B (Assuming root is height 0, formula changes based on convention).
+
+Q105. DFS uses which data structure?
+A) Queue
+B) Stack
+C) Heap
+D) Array
+[ANS]: B
+
+---------------------------
+SECTION: COMPUTER NETWORKS & SECURITY
+---------------------------
+Q106. Which protocol is stateless?
+A) FTP
+B) HTTP
+C) TCP
+D) POP3
+[ANS]: B
+
+Q107. Which address identifies a process on a host?
+A) IP Address
+B) MAC Address
+C) Port Number
+D) Socket
+[ANS]: C
+
+Q108. The 'loopback' IP address is:
+A) 127.0.0.0
+B) 127.0.0.1
+C) 255.255.255.0
+D) 0.0.0.0
+[ANS]: B
+
+Q109. Which layer handles Encryption and Decryption?
+A) Application
+B) Presentation
+C) Session
+D) Transport
+[ANS]: B
+
+Q110. A firewall operates at which layer?
+A) Physical
+B) Data Link
+C) Network/Transport
+D) Application only
+[ANS]: C (Packet filtering at Network/Transport).
+
+Q111. Total number of ports in TCP/IP?
+A) 1024
+B) 32768
+C) 65535
+D) Infinite
+[ANS]: C (2^16 - 1).
+
+Q112. Which protocol sends email?
+A) POP3
+B) IMAP
+C) SMTP
+D) HTTP
+[ANS]: C (Sending = SMTP; Receiving = POP3/IMAP).
+
+Q113. 'Check Sum' is used for:
+A) Error Correction
+B) Error Detection
+C) Encryption
+D) Flow Control
+[ANS]: B
+
+Q114. Difference between Hub and Switch?
+A) Hub broadcasts data to all ports; Switch sends to specific MAC
+B) Switch is slower
+C) Hub is intelligent
+D) No difference
+[ANS]: A
+
+Q115. What is the length of a MAC address?
+A) 32 bits
+B) 48 bits
+C) 128 bits
+D) 64 bits
+[ANS]: B
+
+---------------------------
+SECTION: DBMS & SQL (INTERMEDIATE)
+---------------------------
+Q116. Which JOIN returns rows when there is a match in one of the tables?
+A) INNER JOIN
+B) LEFT JOIN
+C) FULL OUTER JOIN
+D) RIGHT JOIN
+[ANS]: C
+
+Q117. 'COMMIT' and 'ROLLBACK' are examples of:
+A) DDL
+B) DML
+C) TCL
+D) DCL
+[ANS]: C
+
+Q118. Which function is used to count rows?
+A) SUM()
+B) TOTAL()
+C) COUNT()
+D) ADD()
+[ANS]: C
+
+Q119. A key that consists of two or more attributes to uniquely identify a row:
+A) Foreign Key
+B) Composite Key
+C) Surrogate Key
+D) Super Key
+[ANS]: B
+
+Q120. In ER Diagram, a Rectangle represents:
+A) Attribute
+B) Relationship
+C) Entity
+D) Weak Entity
+[ANS]: C
+
+Q121. Default ordering in 'ORDER BY' is:
+A) Descending
+B) Ascending
+C) Random
+D) None
+[ANS]: B
+
+Q122. Which command grants permissions?
+A) ALLOW
+B) GRANT
+C) REVOKE
+D) PERMIT
+[ANS]: B
+
+Q123. 'NULL' in SQL means:
+A) Zero
+B) Blank Space
+C) Unknown or Missing Value
+D) Empty String
+[ANS]: C
+
+Q124. The 'Wildcard' character for a single character in SQL LIKE clause:
+A) %
+B) *
+C) _ (Underscore)
+D) ?
+[ANS]: C (% matches multiple characters).
+
+Q125. 3NF deals with:
+A) Repeating Groups
+B) Partial Dependency
+C) Transitive Dependency
+D) Multi-valued Dependency
+[ANS]: C
+
+---------------------------
+SECTION: CLOUD & NEW TECH (DELOITTE SPECIFIC)
+---------------------------
+Q126. What does SaaS stand for?
+A) System as a Service
+B) Software as a Service
+C) Security as a Service
+D) Storage as a Service
+[ANS]: B
+
+Q127. Which is an example of IaaS (Infrastructure as a Service)?
+A) Gmail
+B) AWS EC2
+C) Google Drive
+D) Salesforce
+[ANS]: B
+
+Q128. What is 'Big Data' characterized by (3 Vs)?
+A) Volume, Velocity, Variety
+B) Volume, Video, Vendor
+C) Virtual, Visual, Variety
+D) Velocity, Verification, Video
+[ANS]: A
+
+Q129. Git is a:
+A) Text Editor
+B) Version Control System
+C) Operating System
+D) Compiler
+[ANS]: B
+
+Q130. IoT stands for:
+A) Input of Things
+B) Internet of Technology
+C) Internet of Things
+D) Intranet of Things
+[ANS]: C
+
+---------------------------
+SECTION: APTITUDE-LOGIC MIX (TECHNICAL)
+---------------------------
+Q131. If A is father of B, but B is not son of A. What is B?
+A) Grandson
+B) Daughter
+C) Brother
+D) Father
+[ANS]: B
+
+Q132. Binary of 10?
+A) 1000
+B) 1010
+C) 1100
+D) 1001
+[ANS]: B
+
+Q133. 1 Byte = ? bits
+A) 4
+B) 8
+C) 16
+D) 32
+[ANS]: B
+
+Q134. Hexadecimal uses base:
+A) 8
+B) 10
+C) 16
+D) 2
+[ANS]: C
+
+Q135. ASCII value of 'A'?
+A) 64
+B) 65
+C) 97
+D) 90
+[ANS]: B (and 'a' is 97).
+
+Q136. Which gate returns TRUE only if both inputs are TRUE?
+A) OR
+B) AND
+C) XOR
+D) NAND
+[ANS]: B
+
+Q137. XOR of 1 and 1 is:
+A) 0
+B) 1
+C) 2
+D) 10
+[ANS]: A
+
+Q138. 2's complement of a binary number is obtained by:
+A) Inverting bits
+B) Adding 1 to 1's complement
+C) Inverting LSB
+D) Adding 1 to MSB
+[ANS]: B
+
+Q139. Which sort is best for nearly sorted array?
+A) Quick Sort
+B) Insertion Sort
+C) Selection Sort
+D) Merge Sort
+[ANS]: B
+
+Q140. Time complexity to search in Hash Table (Average):
+A) O(n)
+B) O(1)
+C) O(log n)
+D) O(n^2)
+[ANS]: B
+
+---------------------------
+SECTION: SOFTWARE ENGINEERING
+---------------------------
+Q141. The waterfall model is:
+A) Iterative
+B) Linear Sequential
+C) Cyclic
+D) Spiral
+[ANS]: B
+
+Q142. SRS stands for:
+A) System Requirement Syntax
+B) Software Requirement Specification
+C) System Resource Schedule
+D) Software Repair System
+[ANS]: B
+
+Q143. White Box Testing checks:
+A) Internal Logic/Code
+B) UI only
+C) User Requirements
+D) Hardware
+[ANS]: A
+
+Q144. Alpha testing is done by:
+A) Customer
+B) Tester/Developer at developer's site
+C) Public
+D) None
+[ANS]: B
+
+Q145. "Agile" methodology emphasizes:
+A) Rigid documentation
+B) Customer collaboration and response to change
+C) Following a plan strictly
+D) Long development cycles
+[ANS]: B
+
+Q146. Coupling in software design should be:
+A) High
+B) Low
+C) Medium
+D) None
+[ANS]: B (Loose Coupling is good).
+
+Q147. Cohesion in software design should be:
+A) High
+B) Low
+C) Zero
+D) Random
+[ANS]: A (High Cohesion is good).
+
+Q148. UML stands for:
+A) Unified Modeling Language
+B) Universal Modeling Logic
+C) Unique Machine Language
+D) User Maintained Language
+[ANS]: A
+
+Q149. Verification vs Validation?
+A) Both are same
+B) Verification: "Are we building the product right?", Validation: "Are we building the right product?"
+C) Validation is done first
+D) Verification is done by users
+[ANS]: B
+
+Q150. Debugging is:
+A) Creating bugs
+B) Finding and fixing bugs
+C) Documentation
+D) Testing
+[ANS]: B
+================================================================
+DELOITTE TECHNICAL ASSESSMENT - CORE CS ONLY (PART 3/3)
+Subjects: OS, DBMS, CN, Data Structures, OOPS
+Total Questions in this file: 75 (Cumulative: 225)
+================================================================
+
+---------------------------
+SECTION: OPERATING SYSTEMS (CORE)
+---------------------------
+Q151. Which system call is used to duplicate a process in Unix?
+A) exec()
+B) fork()
+C) dup()
+D) clone()
+[ANS]: B
+
+Q152. In 'Round Robin' scheduling, if the Time Quantum is very large, the algorithm behaves like:
+A) SJF
+B) FCFS
+C) Priority
+D) Multilevel Queue
+[ANS]: B (First Come First Serve)
+
+Q153. The address generated by the CPU is known as:
+A) Physical Address
+B) Logical Address
+C) Absolute Address
+D) MAC Address
+[ANS]: B
+
+Q154. What is 'Thrashing' in an Operating System?
+A) CPU executing a process efficiently
+B) Excessive swapping of pages between memory and disk
+C) A virus attack
+D) Hard disk crash
+[ANS]: B
+
+Q155. Which command in Linux changes file permissions?
+A) chown
+B) chgrp
+C) chmod
+D) rm
+[ANS]: C
+
+Q156. A 'Critical Section' is a code segment where:
+A) Shared resources are accessed
+B) Process is terminated
+C) Process waits for I/O
+D) Memory is allocated
+[ANS]: A
+
+Q157. Which of the following is NOT a type of kernel?
+A) Monolithic
+B) Micro
+C) Nano
+D) Macro
+[ANS]: D
+
+Q158. The bootstrap program is stored in:
+A) RAM
+B) ROM (BIOS)
+C) Hard Disk
+D) Cache
+[ANS]: B
+
+Q159. Which technique is used to solve external fragmentation?
+A) Paging
+B) Compaction
+C) Segmentation
+D) Swapping
+[ANS]: B
+
+Q160. 'Mutex' stands for:
+A) Mutual Execution
+B) Mutual Exclusion
+C) Memory Execution
+D) Multiple Exclusion
+[ANS]: B
+
+Q161. What is the state of a process after it completes its execution but parent has not yet read its status?
+A) Orphan
+B) Zombie
+C) Sleeping
+D) Running
+[ANS]: B
+
+Q162. Which directory in Linux contains device files?
+A) /etc
+B) /bin
+C) /dev
+D) /lib
+[ANS]: C
+
+Q163. 'Context Switch' takes place at:
+A) User Level
+B) Kernel Level
+C) Hardware Level
+D) Application Level
+[ANS]: B
+
+Q164. Logical address is converted to physical address by:
+A) CPU
+B) MMU (Memory Management Unit)
+C) Compiler
+D) Loader
+[ANS]: B
+
+Q165. FIFO page replacement algorithm suffers from:
+A) Stack Anomaly
+B) Belady's Anomaly
+C) Aging
+D) Starvation
+[ANS]: B
+
+---------------------------
+SECTION: DBMS (CORE & SQL)
+---------------------------
+Q166. Which key constraint enforces Referential Integrity?
+A) Primary Key
+B) Unique Key
+C) Foreign Key
+D) Not Null
+[ANS]: C
+
+Q167. Which SQL operator is used to search for a specified pattern in a column?
+A) IN
+B) BETWEEN
+C) LIKE
+D) EXISTS
+[ANS]: C
+
+Q168. A 'Trigger' in DBMS is:
+A) A statement that enables a transaction
+B) Code that automatically executes in response to certain events
+C) A type of View
+D) A user permission
+[ANS]: B
+
+Q169. 'Normalization' is the process of:
+A) Organizing data to minimize redundancy
+B) Creating backups
+C) Encrypting data
+D) Adding more tables
+[ANS]: A
+
+Q170. Which command undoes all updates performed by the SQL in the transaction?
+A) COMMIT
+B) ROLLBACK
+C) SAVEPOINT
+D) TRUNCATE
+[ANS]: B
+
+Q171. The command 'SELECT DISTINCT name FROM student' will:
+A) Show all names
+B) Show unique names (remove duplicates)
+C) Show names sorted alphabetically
+D) Show names starting with D
+[ANS]: B
+
+Q172. BCNF (Boyce-Codd Normal Form) is a stricter version of:
+A) 1NF
+B) 2NF
+C) 3NF
+D) 4NF
+[ANS]: C
+
+Q173. Which of the following is a DCL command?
+A) INSERT
+B) UPDATE
+C) GRANT
+D) CREATE
+[ANS]: C
+
+Q174. A 'Cursor' in SQL is used for:
+A) Row-by-row processing of result sets
+B) Connecting to the database
+C) Deleting tables
+D) Indexing
+[ANS]: A
+
+Q175. The specific condition where two transactions are waiting for each other to release the lock is:
+A) Starvation
+B) Deadlock
+C) Livelock
+D) Time-out
+[ANS]: B
+
+Q176. Which type of failure occurs when the system loses data in main memory due to power failure?
+A) Disk Crash
+B) Transaction Failure
+C) System Crash (Volatile storage failure)
+D) Media Failure
+[ANS]: C
+
+Q177. 'Clustered Index' determines the:
+A) Logical order of data
+B) Physical order of data in the table
+C) Size of the table
+D) Number of columns
+[ANS]: B
+
+Q178. What is the result of `SELECT COUNT(*) FROM Table` if table is empty?
+A) NULL
+B) 0
+C) Error
+D) Undefined
+[ANS]: B
+
+Q179. UNION operator:
+A) Combines results of two queries and keeps duplicates
+B) Combines results and removes duplicates
+C) Joins two tables
+D) Intersects two tables
+[ANS]: B (UNION ALL keeps duplicates)
+
+Q180. Which property ensures that concurrent execution of transactions results in a system state that would be obtained if transactions were executed serially?
+A) Atomicity
+B) Isolation
+C) Durability
+D) Consistency
+[ANS]: B
+
+---------------------------
+SECTION: COMPUTER NETWORKS (CORE)
+---------------------------
+Q181. Which layer decides the path for data to travel (Routing)?
+A) Physical
+B) Data Link
+C) Network
+D) Transport
+[ANS]: C
+
+Q182. IPv4 address is ___ bits and MAC address is ___ bits.
+A) 32, 32
+B) 32, 48
+C) 48, 32
+D) 64, 48
+[ANS]: B
+
+Q183. Which protocol provides reliable, connection-oriented delivery?
+A) UDP
+B) IP
+C) TCP
+D) Ethernet
+[ANS]: C
+
+Q184. DNS translates:
+A) IP to MAC
+B) Domain Name to IP
+C) MAC to IP
+D) High level language to Machine language
+[ANS]: B
+
+Q185. In which topology, if one cable breaks, the entire network goes down?
+A) Star
+B) Bus
+C) Mesh
+D) Tree
+[ANS]: B (Also Ring)
+
+Q186. Port 80 is used for __ and Port 443 is used for __.
+A) HTTP, HTTPS
+B) FTP, HTTP
+C) SMTP, POP3
+D) Telnet, SSH
+[ANS]: A
+
+Q187. Which device operates at the Physical Layer?
+A) Router
+B) Switch
+C) Hub
+D) Gateway
+[ANS]: C (Repeater also)
+
+Q188. 'Ping' uses which protocol?
+A) TCP
+B) ARP
+C) ICMP
+D) BOOTP
+[ANS]: C
+
+Q189. What is the purpose of 'Subnet Mask'?
+A) To identify the network and host portion of an IP
+B) To hide the IP
+C) To encrypt data
+D) To speed up internet
+[ANS]: A
+
+Q190. Error detection at the Data Link Layer is done using:
+A) Hamming Code
+B) CRC (Cyclic Redundancy Check)
+C) Bit Stuffing
+D) Encryption
+[ANS]: B
+
+Q191. Which class of IP address allows the maximum number of hosts per network?
+A) Class A
+B) Class B
+C) Class C
+D) Class D
+[ANS]: A
+
+Q192. DHCP stands for:
+A) Dynamic Host Configuration Protocol
+B) Data Host Control Protocol
+C) Domain Host Control Protocol
+D) Dynamic Host Control Procedure
+[ANS]: A
+
+Q193. Which layer handles 'Flow Control'?
+A) Transport Only
+B) Data Link Only
+C) Both Data Link and Transport
+D) Network
+[ANS]: C
+
+Q194. The process of adding a header to the data is called:
+A) Decapsulation
+B) Encapsulation
+C) Encryption
+D) Segmentation
+[ANS]: B
+
+Q195. A 'Firewall' is used to:
+A) Connect two networks
+B) Protect the network from unauthorized access
+C) Route data
+D) Amplify signals
+[ANS]: B
+
+---------------------------
+SECTION: DATA STRUCTURES (CORE)
+---------------------------
+Q196. Which data structure is used for 'Undo' operation in editors?
+A) Queue
+B) Stack
+C) Linked List
+D) Tree
+[ANS]: B
+
+Q197. A binary tree where for every node, the left child is smaller and right child is larger is called:
+A) Heap
+B) AVL Tree
+C) Binary Search Tree (BST)
+D) B-Tree
+[ANS]: C
+
+Q198. Worst case time complexity of accessing an element in a Linked List?
+A) O(1)
+B) O(log n)
+C) O(n)
+D) O(n^2)
+[ANS]: C
+
+Q199. Which data structure is best for Breadth First Search (BFS)?
+A) Stack
+B) Queue
+C) Priority Queue
+D) Array
+[ANS]: B
+
+Q200. In a Stack, if TOP = MAX-1, the stack is:
+A) Empty
+B) Full (Overflow condition)
+C) Half full
+D) Garbage
+[ANS]: B
+
+Q201. Circular Queue overcomes the limitation of:
+A) Stack Overflow
+B) Unused memory spaces in Linear Queue
+C) Slow access
+D) Complexity
+[ANS]: B
+
+Q202. Which sorting algorithm divides the array into two halves?
+A) Bubble Sort
+B) Selection Sort
+C) Merge Sort
+D) Insertion Sort
+[ANS]: C
+
+Q203. The number of edges in a tree with N nodes is always:
+A) N
+B) N - 1
+C) N + 1
+D) 2N
+[ANS]: B
+
+Q204. Which data structure is used to implement recursion?
+A) Queue
+B) Stack
+C) Graph
+D) Hash Table
+[ANS]: B
+
+Q205. Quick Sort uses which design technique?
+A) Greedy
+B) Divide and Conquer
+C) Dynamic Programming
+D) Backtracking
+[ANS]: B
+
+---------------------------
+SECTION: OOPS & C++ (CORE)
+---------------------------
+Q206. Which concept allows a class to hide internal details and show only functionality?
+A) Inheritance
+B) Encapsulation
+C) Abstraction
+D) Polymorphism
+[ANS]: C
+
+Q207. A function that can access private members of a class but is not a member of that class:
+A) Inline function
+B) Friend function
+C) Static function
+D) Virtual function
+[ANS]: B
+
+Q208. 'new' and 'delete' in C++ are:
+A) Functions
+B) Operators
+C) Data types
+D) Classes
+[ANS]: B
+
+Q209. Runtime polymorphism is achieved using:
+A) Function Overloading
+B) Operator Overloading
+C) Virtual Functions
+D) Constructor Overloading
+[ANS]: C
+
+Q210. Which constructor is called when an object is initialized with another object of the same class?
+A) Default Constructor
+B) Copy Constructor
+C) Parameterized Constructor
+D) Dynamic Constructor
+[ANS]: B
+
+Q211. An abstract class in C++ must contain at least one:
+A) Static function
+B) Pure virtual function
+C) Friend function
+D) Constructor
+[ANS]: B
+
+Q212. Members of a class are by default:
+A) Public
+B) Private
+C) Protected
+D) Static
+[ANS]: B (In Struct, they are public by default)
+
+Q213. The mechanism of deriving a class from another 'derived' class is known as:
+A) Multiple Inheritance
+B) Multilevel Inheritance
+C) Single Inheritance
+D) Hybrid Inheritance
+[ANS]: B
+
+Q214. Diamond problem (ambiguity) occurs in:
+A) Single Inheritance
+B) Multilevel Inheritance
+C) Multiple Inheritance
+D) Hierarchical Inheritance
+[ANS]: C
+
+Q215. 'static' member functions can access:
+A) Only static data members
+B) Only non-static data members
+C) Both static and non-static
+D) None
+[ANS]: A
+
+---------------------------
+SECTION: MISCELLANEOUS CORE
+---------------------------
+Q216. In C, 'segmentation fault' occurs due to:
+A) Syntax error
+B) Illegal memory access
+C) Division by zero
+D) Infinite loop
+[ANS]: B
+
+Q217. Which is a valid variable name?
+A) 1var
+B) _var
+C) var-name
+D) int
+[ANS]: B
+
+Q218. In Python, which keyword is used to define a function?
+A) func
+B) def
+C) function
+D) define
+[ANS]: B
+
+Q219. Which command is used to check the IP address in Windows?
+A) ifconfig
+B) ipconfig
+C) ipcheck
+D) netip
+[ANS]: B (ifconfig is for Linux)
+
+Q220. The default return type of main() in C++ is:
+A) void
+B) int
+C) float
+D) char
+[ANS]: B
+
+Q221. A pointer that is pointing to a memory location that has been deleted (freed) is called:
+A) Null Pointer
+B) Void Pointer
+C) Dangling Pointer
+D) Wild Pointer
+[ANS]: C
+
+Q222. Complexity of accessing an element in a Hash Table (Best Case):
+A) O(1)
+B) O(n)
+C) O(log n)
+D) O(n log n)
+[ANS]: A
+
+Q223. What is 'Inorder' traversal sequence?
+A) Root -> Left -> Right
+B) Left -> Root -> Right
+C) Left -> Right -> Root
+D) Right -> Left -> Root
+[ANS]: B
+
+Q224. Which data structure is used in Breadth First Search of a graph?
+A) Stack
+B) Queue
+C) Tree
+D) Array
+[ANS]: B
+
+Q225. Full form of URL:
+A) Uniform Resource Locator
+B) Uniform Resource Link
+C) Unified Resource Locator
+D) Uniform Reference Locator
+[ANS]: A
+================================================================
+DELOITTE TECHNICAL ASSESSMENT - FINAL MIX (PART 4/4)
+Subjects: Cloud, Cyber Security, ML, OOPS, DBMS, CN, DSA
+Total Questions in this file: 25 (Cumulative: 250)
+================================================================
+
+---------------------------
+SECTION: CLOUD COMPUTING (NEW AGE TECH)
+---------------------------
+Q226. Which cloud service model provides a platform allowing customers to develop, run, and manage applications without the complexity of building infrastructure?
+A) IaaS (Infrastructure as a Service)
+B) PaaS (Platform as a Service)
+C) SaaS (Software as a Service)
+D) DaaS (Desktop as a Service)
+[ANS]: B (e.g., Google App Engine, Heroku)
+
+Q227. What is the software called that creates and runs virtual machines (VMs)?
+A) Kernel
+B) Hypervisor
+C) Docker
+D) Compiler
+[ANS]: B (e.g., VMware, Hyper-V)
+
+Q228. Which type of cloud is deployed within a single organization and is used only by them?
+A) Public Cloud
+B) Private Cloud
+C) Hybrid Cloud
+D) Community Cloud
+[ANS]: B
+
+Q229. AWS, Microsoft Azure, and Google Cloud are examples of:
+A) Public Cloud
+B) Private Cloud
+C) Personal Cloud
+D) Internal Cloud
+[ANS]: A
+
+---------------------------
+SECTION: CYBER SECURITY
+---------------------------
+Q230. In Information Security, the CIA triad stands for:
+A) Confidentiality, Integrity, Availability
+B) Control, Intelligence, Access
+C) Cyber, Internet, Applications
+D) Confidentiality, Identity, Authentication
+[ANS]: A
+
+Q231. Which type of attack involves overwhelming a server with traffic to make it unavailable to users?
+A) Phishing
+B) SQL Injection
+C) DoS / DDoS (Denial of Service)
+D) Man-in-the-Middle
+[ANS]: C
+
+Q232. Which protocol is used to securely log onto remote systems (replacing Telnet)?
+A) FTP
+B) HTTP
+C) SSH (Secure Shell)
+D) SMTP
+[ANS]: C
+
+Q233. The process of converting data into a coded form to prevent unauthorized access is:
+A) Hashing
+B) Encryption
+C) Decapsulation
+D) Firewalling
+[ANS]: B
+
+Q234. Which of the following is an example of Symmetric Encryption?
+A) RSA
+B) AES (Advanced Encryption Standard)
+C) ECC
+D) Diffie-Hellman
+[ANS]: B (RSA is Asymmetric)
+
+---------------------------
+SECTION: MACHINE LEARNING (BASIC)
+---------------------------
+Q235. Which type of Machine Learning involves training a model on labeled data?
+A) Unsupervised Learning
+B) Supervised Learning
+C) Reinforcement Learning
+D) Clustering
+[ANS]: B
+
+Q236. A problem where the model learns the training data too well, negatively impacting performance on new data, is called:
+A) Underfitting
+B) Overfitting
+C) Bias
+D) Regularization
+[ANS]: B
+
+Q237. Which algorithm is commonly used for Classification problems?
+A) Linear Regression
+B) Logistic Regression
+C) K-Means Clustering
+D) Apriori
+[ANS]: B (Despite the name, Logistic Regression is for classification)
+
+---------------------------
+SECTION: ADVANCED OOPS & DSA
+---------------------------
+Q238. In C++, which operator is used to access members of a class using a pointer to an object?
+A) . (Dot)
+B) -> (Arrow)
+C) : (Colon)
+D) :: (Scope Resolution)
+[ANS]: B (e.g., ptr->function())
+
+Q239. Which data structure is primarily used to implement a 'Undo' feature or 'Back' button in browsers?
+A) Queue
+B) Stack
+C) Tree
+D) Graph
+[ANS]: B (LIFO principle)
+
+Q240. What is the time complexity of searching in a Balanced Binary Search Tree (BST)?
+A) O(n)
+B) O(log n)
+C) O(n^2)
+D) O(1)
+[ANS]: B
+
+Q241. The concept of multiple classes sharing the same interface but different implementations is:
+A) Encapsulation
+B) Polymorphism
+C) Inheritance
+D) Coupling
+[ANS]: B
+
+---------------------------
+SECTION: ADVANCED DBMS & CN
+---------------------------
+Q242. Which type of database is best suited for unstructured data (like social media posts)?
+A) Relational Database (SQL)
+B) NoSQL Database (e.g., MongoDB)
+C) Hierarchical Database
+D) Network Database
+[ANS]: B
+
+Q243. In a database transaction, which state is reached after the final statement has been executed?
+A) Active
+B) Partially Committed
+C) Committed
+D) Failed
+[ANS]: B (It becomes 'Committed' only after a successful COMMIT check)
+
+Q244. A 'Proxy Server' is used for:
+A) Speeding up access to resources (Caching)
+B) Hiding the client's IP address
+C) Filtering content
+D) All of the above
+[ANS]: D
+
+Q245. Which VPN protocol is considered the most secure and widely used today?
+A) PPTP
+B) OpenVPN
+C) L2TP
+D) WEP
+[ANS]: B
+
+---------------------------
+SECTION: PROGRAMMING & LOGIC FINAL MIX
+---------------------------
+Q246. What will `x = x << 1` do to the integer `x`?
+A) Divide by 2
+B) Multiply by 2
+C) Add 1
+D) Subtract 1
+[ANS]: B (Left shift by 1 is multiplication by 2)
+
+Q247. In Python, which keyword is used to handle exceptions?
+A) catch
+B) except
+C) handle
+D) error
+[ANS]: B (try...except block)
+
+Q248. Which is NOT a valid access specifier in Java?
+A) private
+B) public
+C) protected
+D) friend
+[ANS]: D (Friend is in C++, not Java)
+
+Q249. What is the output of `10 % 3`?
+A) 3
+B) 1
+C) 3.33
+D) 0
+[ANS]: B (Modulus operator returns remainder)
+
+Q250. 'Recursion' without a base case leads to:
+A) Syntax Error
+B) Stack Overflow
+C) Logical Error
+D) Fast Execution
+[ANS]: B
+================================================================
+DELOITTE TECHNICAL ASSESSMENT - FRESH 100 SET (NON-REPEATED)
+Subjects: Adv. DSA, Web Tech, Testing, Architecture, Cloud
+Total Questions: 100 (Cumulative: 350)
+================================================================
+
+---------------------------
+SECTION: DATA STRUCTURES & ALGORITHMS (ADVANCED)
+---------------------------
+Q251. What is the time complexity of Floyd-Warshall algorithm?
+A) O(n^2)
+B) O(n^3)
+C) O(n log n)
+D) O(E + V)
+[ANS]: B
+
+Q252. Which data structure is used to implement a 'Cache' (LRU - Least Recently Used)?
+A) Stack
+B) Hash Map + Doubly Linked List
+C) Binary Search Tree
+D) Array
+[ANS]: B
+
+Q253. In a Min-Heap, the root node always contains:
+A) The maximum value
+B) The minimum value
+C) The middle value
+D) Random value
+[ANS]: B
+
+Q254. Which traversal of a BST yields elements in descending order?
+A) Inorder
+B) Reverse Inorder (Right-Root-Left)
+C) Preorder
+D) Postorder
+[ANS]: B
+
+Q255. The 'Tower of Hanoi' puzzle is a classic example of:
+A) Greedy Algorithm
+B) Divide and Conquer
+C) Recursion
+D) Dynamic Programming
+[ANS]: C
+
+Q256. Which sorting algorithm is known as the 'worst' due to O(n!) complexity in worst cases (Bogo Sort)?
+A) Bubble Sort
+B) Bogo Sort (Permutation Sort)
+C) Shell Sort
+D) Radix Sort
+[ANS]: B
+
+Q257. What is a 'Sparse Matrix'?
+A) A matrix with all zeros
+B) A matrix with mostly zero elements
+C) A matrix with mostly non-zero elements
+D) An identity matrix
+[ANS]: B
+
+Q258. Rabin-Karp algorithm is used for:
+A) Sorting
+B) Shortest Path
+C) String Matching / Pattern Searching
+D) Minimum Spanning Tree
+[ANS]: C
+
+Q259. Which data structure is useful for implementing a Dictionary or Spell Checker?
+A) Linked List
+B) Trie (Prefix Tree)
+C) Stack
+D) Queue
+[ANS]: B
+
+Q260. Which collision resolution technique involves finding the next empty slot sequentially?
+A) Chaining
+B) Linear Probing
+C) Quadratic Probing
+D) Double Hashing
+[ANS]: B
+
+Q261. The height of a Red-Black Tree with n nodes is approximately:
+A) n
+B) 2n
+C) 2 log(n+1)
+D) n/2
+[ANS]: C (It is balanced)
+
+Q262. Which algorithm is used for finding the Minimum Spanning Tree?
+A) Dijkstra
+B) Kruskal’s Algorithm
+C) Floyd-Warshall
+D) Bellman-Ford
+[ANS]: B (Prim's is another)
+
+Q263. A 'Deque' stands for:
+A) Double Ended Queue
+B) Data Enqueued
+C) Direct Entry Queue
+D) Dual Element Queue
+[ANS]: A
+
+Q264. Evaluation of prefix expression uses:
+A) One Stack
+B) Two Stacks
+C) Queue
+D) Array
+[ANS]: A
+
+Q265. What is the best case complexity of Bubble Sort (when array is already sorted)?
+A) O(n^2)
+B) O(n)
+C) O(log n)
+D) O(1)
+[ANS]: B
+
+---------------------------
+SECTION: DBMS & ADVANCED SQL
+---------------------------
+Q266. Which isolation level prevents 'Dirty Reads'?
+A) Read Uncommitted
+B) Read Committed
+C) Snapshot
+D) None
+[ANS]: B
+
+Q267. What is a 'Self Join'?
+A) Joining a table with another table
+B) Joining a table with itself
+C) Joining two databases
+D) Joining a view
+[ANS]: B
+
+Q268. The specialized language used to query data in NoSQL databases like MongoDB is mostly based on:
+A) XML
+B) JSON / BSON
+C) HTML
+D) CSS
+[ANS]: B
+
+Q269. What is 'Data Warehousing'?
+A) Storing data on tapes
+B) Process of collecting and managing data from varied sources for business insights
+C) Deleting old data
+D) Compressing data
+[ANS]: B
+
+Q270. In an ER diagram, a 'Double Ellipse' represents:
+A) Key Attribute
+B) Derived Attribute
+C) Multivalued Attribute
+D) Composite Attribute
+[ANS]: C
+
+Q271. Which SQL function returns the current system date and time?
+A) NOW() or GETDATE()
+B) TODAY()
+C) TIME()
+D) CURRENT()
+[ANS]: A
+
+Q272. 'RAID' stands for:
+A) Redundant Array of Independent Disks
+B) Random Access of Independent Disks
+C) Rapid Access of Internal Disks
+D) Read Access of Index Data
+[ANS]: A
+
+Q273. RAID Level 1 provides:
+A) Striping
+B) Mirroring
+C) Parity
+D) Hamming Code
+[ANS]: B
+
+Q274. Which of the following is an Aggregate Function?
+A) UPPER()
+B) SUBSTR()
+C) AVG()
+D) LEN()
+[ANS]: C
+
+Q275. Cartesian Product of two tables with 4 rows and 5 rows respectively will have how many rows?
+A) 9
+B) 20
+C) 4
+D) 5
+[ANS]: B (4 * 5 = 20)
+
+Q276. Which type of failure is 'loss of data in non-volatile storage' (HDD crash)?
+A) System Crash
+B) Media Failure
+C) Transaction Failure
+D) Power Failure
+[ANS]: B
+
+Q277. 'Grant Option' allows a user to:
+A) Only access data
+B) Pass on the privileges to other users
+C) Delete tables
+D) Create backups
+[ANS]: B
+
+Q278. Which form of dependency involves non-prime attributes depending on other non-prime attributes?
+A) Functional Dependency
+B) Transitive Dependency
+C) Partial Dependency
+D) Full Dependency
+[ANS]: B (Removed in 3NF)
+
+Q279. What does OLAP stand for?
+A) Online Analytical Processing
+B) Online Advanced Processing
+C) Offline Analytical Processing
+D) Online Application Protocol
+[ANS]: A
+
+Q280. The 'Cartesian Product' in SQL is returned by which join if no condition is specified?
+A) INNER JOIN
+B) CROSS JOIN
+C) LEFT JOIN
+D) OUTER JOIN
+[ANS]: B
+
+---------------------------
+SECTION: OS & COMPUTER ARCHITECTURE
+---------------------------
+Q281. RISC stands for:
+A) Reduced Instruction Set Computer
+B) Rapid Instruction Set Computer
+C) Random Instruction Set Computer
+D) Reliable Instruction Set Computer
+[ANS]: A
+
+Q282. The register that keeps track of the next instruction to be executed is:
+A) Accumulator
+B) Program Counter (PC)
+C) Instruction Register (IR)
+D) Stack Pointer
+[ANS]: B
+
+Q283. What is 'Cache Hit'?
+A) Data is found in Cache Memory
+B) Data is not found in Cache
+C) Cache is full
+D) Cache is corrupted
+[ANS]: A
+
+Q284. Which addressing mode allows the operand to be specified directly in the instruction?
+A) Direct Addressing
+B) Immediate Addressing
+C) Indirect Addressing
+D) Register Addressing
+[ANS]: B
+
+Q285. 'DMA' stands for:
+A) Direct Memory Access
+B) Dynamic Memory Access
+C) Dual Memory Architecture
+D) Disk Memory Allocation
+[ANS]: A
+
+Q286. Which disk scheduling algorithm moves the head from one end to the other, servicing requests (Elevator Algorithm)?
+A) FCFS
+B) SSTF
+C) SCAN
+D) LOOK
+[ANS]: C
+
+Q287. In Linux, 'cron' is used for:
+A) File management
+B) Process scheduling (Time-based job scheduler)
+C) User management
+D) Network configuration
+[ANS]: B
+
+Q288. Which file system is used by Windows?
+A) EXT4
+B) NTFS
+C) HFS+
+D) ZFS
+[ANS]: B
+
+Q289. 'System Call' provides an interface between:
+A) Process and Operating System
+B) User and Hardware
+C) Hardware and Software
+D) Two Processes
+[ANS]: A
+
+Q290. What is 'Demand Paging'?
+A) Loading all pages at once
+B) Loading a page only when it is needed
+C) Swapping out all pages
+D) Deleting pages
+[ANS]: B
+
+---------------------------
+SECTION: COMPUTER NETWORKS (DEEP DIVE)
+---------------------------
+Q291. What is the port number for SSH?
+A) 21
+B) 22
+C) 23
+D) 25
+[ANS]: B
+
+Q292. Which protocol is used for transferring files securely?
+A) FTP
+B) SFTP
+C) TFTP
+D) SMTP
+[ANS]: B
+
+Q293. Which layer is responsible for 'Token Management'?
+A) Session Layer
+B) Network Layer
+C) Transport Layer
+D) Physical Layer
+[ANS]: A
+
+Q294. 192.168.1.1 belongs to which IP Class?
+A) Class A
+B) Class B
+C) Class C
+D) Class D
+[ANS]: C
+
+Q295. 'Parity Bit' is used for:
+A) Encryption
+B) Error Detection (Single bit)
+C) Compression
+D) Indexing
+[ANS]: B
+
+Q296. What is the size of an ATM cell?
+A) 53 bytes
+B) 64 bytes
+C) 48 bytes
+D) 32 bytes
+[ANS]: A (48 payload + 5 header)
+
+Q297. Which device reduces broadcast traffic in a network?
+A) Hub
+B) Switch (VLANs) / Router
+C) Repeater
+D) Cable
+[ANS]: B (Router blocks broadcasts by default)
+
+Q298. 'Beacons' are used in:
+A) Ethernet
+B) Token Ring / Wireless LANs
+C) Bus Topology
+D) Star Topology
+[ANS]: B
+
+Q299. Start of Frame Delimiter (SFD) is used in:
+A) Ethernet Frame
+B) IP Packet
+C) TCP Segment
+D) UDP Datagram
+[ANS]: A
+
+Q300. Which protocol uses 'Windowing' for flow control?
+A) UDP
+B) TCP
+C) IP
+D) ICMP
+[ANS]: B
+
+---------------------------
+SECTION: WEB TECHNOLOGY & INTERNET
+---------------------------
+Q301. HTML tags are enclosed in:
+A) {}
+B) ()
+C) <>
+D) []
+[ANS]: C
+
+Q302. Which status code indicates "Internal Server Error"?
+A) 404
+B) 200
+C) 500
+D) 503
+[ANS]: C
+
+Q303. CSS stands for:
+A) Computer Style Sheets
+B) Creative Style Sheets
+C) Cascading Style Sheets
+D) Colorful Style Sheets
+[ANS]: C
+
+Q304. Which HTTP method is idempotent (safe to repeat)?
+A) POST
+B) GET
+C) CONNECT
+D) None
+[ANS]: B
+
+Q305. 'Cookies' are stored on the:
+A) Server side
+B) Client side (Browser)
+C) Database
+D) Network
+[ANS]: B
+
+Q306. JSON stands for:
+A) Java Standard Object Notation
+B) JavaScript Object Notation
+C) Java Script Option Notation
+D) Java Syntax Object Name
+[ANS]: B
+
+Q307. What does DOM stand for?
+A) Data Object Model
+B) Document Object Model
+C) Digital Object Method
+D) Dynamic Object Main
+[ANS]: B
+
+Q308. Which is a server-side scripting language?
+A) HTML
+B) CSS
+C) PHP
+D) XML
+[ANS]: C
+
+Q309. REST API usually uses which format for data exchange?
+A) XML
+B) JSON
+C) HTML
+D) Text
+[ANS]: B
+
+Q310. What is 'Local Storage' in HTML5?
+A) Cookies
+B) Storage on server
+C) Storage on client browser with no expiration
+D) Session storage
+[ANS]: C
+
+---------------------------
+SECTION: SOFTWARE ENGINEERING & TESTING
+---------------------------
+Q311. 'Regression Testing' is performed:
+A) To check new features
+B) To ensure changes haven't broken existing functionality
+C) Before coding
+D) By users
+[ANS]: B
+
+Q312. Capability Maturity Model (CMM) levels range from:
+A) 1 to 5
+B) 1 to 10
+C) 0 to 5
+D) A to F
+[ANS]: A (Initial to Optimizing)
+
+Q313. Which model is risk-driven?
+A) Waterfall
+B) Spiral
+C) V-Model
+D) Agile
+[ANS]: B
+
+Q314. 'Black Box Testing' is also known as:
+A) Structural Testing
+B) Behavioral Testing
+C) Glass Box Testing
+D) Unit Testing
+[ANS]: B
+
+Q315. The person responsible for removing obstacles in Scrum is:
+A) Product Owner
+B) Scrum Master
+C) Developer
+D) Stakeholder
+[ANS]: B
+
+Q316. 'Cyclomatic Complexity' measures:
+A) Code size
+B) Code complexity (Linearly independent paths)
+C) Code speed
+D) Memory usage
+[ANS]: B
+
+Q317. SDLC phase where the product is actually built:
+A) Design
+B) Coding / Implementation
+C) Testing
+D) Maintenance
+[ANS]: B
+
+Q318. 'Beta' software refers to:
+A) The final version
+B) A pre-release version for external testing
+C) A virus
+D) An internal tool
+[ANS]: B
+
+Q319. UAT stands for:
+A) User Application Test
+B) User Acceptance Testing
+C) Uniform Access Testing
+D) Universal Application Tool
+[ANS]: B
+
+Q320. Which diagram shows the dynamic behavior of a system?
+A) Class Diagram
+B) Sequence Diagram
+C) Component Diagram
+D) Deployment Diagram
+[ANS]: B
+
+---------------------------
+SECTION: EMERGING TECH & MISC (Python/ML/Cloud)
+---------------------------
+Q321. In Python, `lambda` functions are:
+A) Global functions
+B) Anonymous (nameless) functions
+C) Recursive functions
+D) Constructors
+[ANS]: B
+
+Q322. Which library is used for data manipulation in Python?
+A) NumPy
+B) Pandas
+C) Matplotlib
+D) Scikit-learn
+[ANS]: B
+
+Q323. 'Docker' is a tool used for:
+A) Virtualization
+B) Containerization
+C) Compilation
+D) Networking
+[ANS]: B
+
+Q324. Which type of Blockchain is Bitcoin?
+A) Private
+B) Public
+C) Consortium
+D) Hybrid
+[ANS]: B
+
+Q325. 'Hadoop' is related to:
+A) Cloud Storage
+B) Big Data Processing
+C) IoT
+D) Blockchain
+[ANS]: B
+
+Q326. In ML, a 'Confusion Matrix' is used to evaluate:
+A) Regression models
+B) Classification models
+C) Clustering
+D) Reinforcement learning
+[ANS]: B
+
+Q327. 'Kubernetes' is used for:
+A) Container Orchestration
+B) Coding
+C) Database management
+D) Operating System
+[ANS]: A
+
+Q328. Which of the following is NOT a NoSQL database?
+A) MongoDB
+B) Cassandra
+C) Redis
+D) MySQL
+[ANS]: D
+
+Q329. What is 'Edge Computing'?
+A) Computing in the cloud
+B) Computing near the source of data (edge of network)
+C) Computing on supercomputers
+D) Offline computing
+[ANS]: B
+
+Q330. 'Phishing' is an attempt to:
+A) Secure data
+B) Acquire sensitive info by masquerading as a trustworthy entity
+C) Speed up internet
+D) Test software
+[ANS]: B
+
+---------------------------
+SECTION: PROGRAMMING LOGIC (TRICKY)
+---------------------------
+Q331. C++: What is the size of an empty class?
+A) 0
+B) 1 byte
+C) 2 bytes
+D) 4 bytes
+[ANS]: B (To ensure unique address)
+
+Q332. Python: `print(type(5/2))` output?
+A) int
+B) float
+C) double
+D) decimal
+[ANS]: B (In Python 3, division always returns float)
+
+Q333. Which bitwise operator checks if a number is odd/even?
+A) & (AND)
+B) | (OR)
+C) ^ (XOR)
+D) ~ (NOT)
+[ANS]: A (`x & 1` is 1 if odd)
+
+Q334. Logic: If P implies Q, then Not Q implies:
+A) P
+B) Not P
+C) Q
+D) True
+[ANS]: B (Contrapositive)
+
+Q335. A function calling itself is called:
+A) Looping
+B) Recursion
+C) Iteration
+D) Nesting
+[ANS]: B
+
+Q336. The complexity of `merging` two sorted arrays of size M and N is:
+A) O(M*N)
+B) O(M+N)
+C) O(log M)
+D) O(1)
+[ANS]: B
+
+Q337. Prefix notation is also known as:
+A) Polish Notation
+B) Reverse Polish Notation
+C) Infix
+D) Postfix
+[ANS]: A
+
+Q338. ASCII value of '0' (zero char) is:
+A) 0
+B) 48
+C) 32
+D) 65
+[ANS]: B
+
+Q339. `i = 10; printf("%d", i--);` prints:
+A) 9
+B) 10
+C) 11
+D) Error
+[ANS]: B (Post-decrement prints first, then decreases)
+
+Q340. What is 'Segmentation Fault'?
+A) Hard disk error
+B) Accessing memory not allocated to the program
+C) Compiler error
+D) Syntax error
+[ANS]: B
+
+---------------------------
+SECTION: CYBER SECURITY & ENCRYPTION
+---------------------------
+Q341. Which key is kept secret in Asymmetric Encryption?
+A) Public Key
+B) Private Key
+C) Session Key
+D) Shared Key
+[ANS]: B
+
+Q342. 'Ransomware' is a type of malware that:
+A) Steals passwords
+B) Encrypts user data and demands payment
+C) Shows ads
+D) Slows down PC
+[ANS]: B
+
+Q343. HTTPS uses which protocol for security?
+A) SSL/TLS
+B) SSH
+C) IPSec
+D) PGP
+[ANS]: A
+
+Q344. A 'Botnet' is:
+A) A network of robots
+B) A network of infected computers controlled by an attacker
+C) A fast internet
+D) A firewall
+[ANS]: B
+
+Q345. 'Salting' passwords means:
+A) Encrypting them twice
+B) Adding random data to password before hashing
+C) Storing them in plain text
+D) Hiding them
+[ANS]: B
+
+Q346. Which attack tries all possible combinations of passwords?
+A) Dictionary Attack
+B) Brute Force Attack
+C) Phishing
+D) SQL Injection
+[ANS]: B
+
+Q347. 'VPN' creates a:
+A) Public tunnel
+B) Secure, encrypted tunnel over a public network
+C) Faster connection
+D) Local Area Network
+[ANS]: B
+
+Q348. Which is considered a strong password?
+A) password123
+B) admin@123
+C) Tr0ub4dor&3
+D) 12345678
+[ANS]: C
+
+Q349. 'Social Engineering' targets:
+A) Software bugs
+B) Hardware flaws
+C) Human psychology / manipulation
+D) Network protocols
+[ANS]: C
+
+Q350. Two-Factor Authentication (2FA) relies on:
+A) Only password
+B) Something you know + Something you have/are
+C) Two passwords
+D) Fingerprint only
+[ANS]: B
